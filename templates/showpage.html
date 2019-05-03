@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Pokemon Showcase</title>
+    <title>{{dataPokemon.json()['name']}}</title>
     <style>
             body {
                 background-image: url("http://www.sdjgjx.com/up/pc/Cartoon%20Clouds%20Wallpaper%2046932.jpg")
@@ -27,10 +27,10 @@
 <body>
     <h1><img src="http://pluspng.com/img-png/pokemon-logo-png-pokemon-logo-png-2000.png" height="150px" width="350px"></h1>
     <p>Nama: {{dataPokemon.json()['name']}}</p>
+    <p><img src='{{dataPokemon.json()['sprites']['front_default']}}' height="200px" width="200px"></p>
     <p>ID: {{dataPokemon.json()['id']}}</p>
     <p>Tinggi : {{dataPokemon.json()['height']}}</p>
     <p>Berat : {{dataPokemon.json()['weight']}}</p>
-    <p><img src='{{dataPokemon.json()['sprites']['front_default']}}' height="200px" width="200px"></p>
     
     <div class="wrapper">
         <input type="button" value="Kembali" onclick="window.history.back()" />
