@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Pokemon</title>
+    
+    <style>
+            body {
+                background-image: url("http://www.sdjgjx.com/up/pc/Cartoon%20Clouds%20Wallpaper%2046932.jpg")
+            }
+            h1 {
+                text-align: center;
+                font-size: 70px;
+                text-transform: uppercase;
+                letter-spacing: 2px
+            }
+            p {
+                text-align: center;
+            }
+    </style>
+
+</head>
+<body>
+    <h1><img src="http://pluspng.com/img-png/pokemon-logo-png-pokemon-logo-png-2000.png" height="150px" width="350px"></h1>
+
+    <form action="http://localhost:5000/post" method="POST">
+        <p>
+            <input name="nama" type="text" placeholder="Ketik nama Pokemon...."/>
+        </p>
+        <p>
+            <input type="submit" value="Cari"/>
+        </p>
+    </form>
+    
+</body>
+</html>

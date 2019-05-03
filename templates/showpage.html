@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Pokemon Showcase</title>
+    <style>
+            body {
+                background-image: url("http://www.sdjgjx.com/up/pc/Cartoon%20Clouds%20Wallpaper%2046932.jpg")
+            }
+            h1 {
+                text-align: center;
+                font-size: 70px;
+                text-transform: uppercase;
+                letter-spacing: 2px
+            }
+            p {
+                text-align: center;
+                font-size: 40px;
+            }
+            .wrapper{
+                text-align: center
+            }
+            .button {
+                position: absolute;
+            }
+    </style>
+</head>
+<body>
+    <h1><img src="http://pluspng.com/img-png/pokemon-logo-png-pokemon-logo-png-2000.png" height="150px" width="350px"></h1>
+    <p>Nama: {{dataPokemon.json()['name']}}</p>
+    <p>ID: {{dataPokemon.json()['id']}}</p>
+    <p>Tinggi : {{dataPokemon.json()['height']}}</p>
+    <p>Berat : {{dataPokemon.json()['weight']}}</p>
+    <p><img src='{{dataPokemon.json()['sprites']['front_default']}}' height="200px" width="200px"></p>
+    
+    <div class="wrapper">
+        <input type="button" value="Kembali" onclick="window.history.back()" />
+    </div>
+</body>
+</html>
